@@ -2,7 +2,7 @@ const sharp = require("sharp");
 const axios = require("axios");
 const fs = require("fs");
 const { v4: uuidv4 } = require("uuid");
-const { client } = require("./.db");
+const { client } = require("./db.js");
 
 async function processImages(products, requestId) {
   products.forEach((product) => {

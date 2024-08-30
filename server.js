@@ -3,7 +3,7 @@ require("dotenv").config();
 const express = require("express");
 
 const axios = require("axios");
-const { client } = require("./.db");
+const { client } = require("./db.js");
 const { processImages } = require("./controller");
 
 const app = express();
